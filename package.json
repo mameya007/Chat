@@ -16,7 +16,8 @@
     "react-native-crypto": "^2.1.2",
     "react-native-gifted-chat": "^0.4.3",
     "react-native-randombytes": "^3.5.1",
-    "url": "^0.11.0"
+    "url": "^0.11.0",
+    "prop-types": "latest"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
