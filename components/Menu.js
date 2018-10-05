@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Button, Text, TextInput, StyleSheet, View} from 'react-native';
 import PropTypes from 'prop-types';
-import Chatkit from '@pusher/chatkit-server';
+// import Chatkit from '@pusher/chatkit-server';
 // import constants from './constants';
 // import * as ConstVar from 'CTS';
 
