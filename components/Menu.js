@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Button, Text, TextInput, StyleSheet, View} from 'react-native';
 import PropTypes from 'prop-types';
-// import Chatkit from '@pusher/chatkit-server';
+import Chatkit from '@pusher/chatkit-server';
 // import constants from './constants';
 // import * as ConstVar from 'CTS';
 
@@ -26,25 +26,25 @@ class Menu extends Component {
         }
     };
 
-    // CreateUser =()=>{
-    //     const chatKit=new Chatkit.default({
-    //         instanceLocator:"v1:us1:ceb84367-dafc-4fa7-9dab-1115b9887173",
-    //         key:"27a0080b-b2bd-4aff-9356-2c0bf79584bf:ZWg5TNnylrFtOCAx2AQvJLfXMY3tVqpZxS2oRrOnDRw="
-    //     });
-    //     chatKit.createUser({
-    //         id: 'Bunny',
-    //         name: 'Hadil',
-    //     })
-    //         .then((user) => {
-    //             console.log('Success', user);
-    //         }).catch((err) => {
-    //         console.log(err);
-    //     });
-    //
-    // };
-    // componentDidMount(){
-    //     this.CreateUser();
-    // }
+    CreateUser =()=>{
+        const chatKit=new Chatkit.default({
+            instanceLocator:"v1:us1:ceb84367-dafc-4fa7-9dab-1115b9887173",
+            key:"27a0080b-b2bd-4aff-9356-2c0bf79584bf:ZWg5TNnylrFtOCAx2AQvJLfXMY3tVqpZxS2oRrOnDRw="
+        });
+        chatKit.createUser({
+            id: 'Bunny',
+            name: 'Hadil',
+        })
+            .then((user) => {
+                console.log('Success', user);
+            }).catch((err) => {
+            console.log(err);
+        });
+
+    };
+    componentDidMount(){
+        this.CreateUser();
+    }
 
 
     SetChatRoom=(roomName) =>{
